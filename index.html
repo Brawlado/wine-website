@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marcellus&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marcellus&family=Playwrite+ZA:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marcellus&family=Ms+Madi&family=Playwrite+ZA:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/fontello.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/06c97d0548.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- <button onclick="toggleMenu(event)" id="testButton">click</button> -->
+    <div id="mobile-menu-panel">
+      <a
+        href="#"
+        id="close-mobile-menu-icon"
+        class="close-panel-button toggle-mobile-menu"
+        >X</a
+      >
+      <div id="mobile-menu-panel-inner">
+        <ul id="site-navigation-mobile-mobile" class="nav-menu-mobile">
+          <li class="menu-item">
+            <span class="menu-item-text-container" itemprop="name">Sample</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-item-text-container" itemprop="name">Sample</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-item-text-container" itemprop="name">Sample</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-item-text-container" itemprop="name">Sample</span>
+          </li>
+        </ul>
+      </div>
+      <!-- .mobile-menu-panel-inner -->
+    </div>
+    <!-- #mobile-menu-panel -->
+    <a href="#top" id="back-to-top" class="back-to-top"> Back to the top </a>
+    <!-- <div id="side-panel" class="side-panel">
+      <div class="side-panel-inner"></div>
+    </div> -->
+    <div class="page-content" style="margin-bottom: 0">
+      <header id="mast-head" class="site-header">
+        <!-- desktop navigation -->
+        <div id="desktop-navigation" class="desktop-navigation">
+          <div id="nav-bar" class="nav-bar" data-menu-layout="top-justify">
+            <div class="flex-desktop-wrap">
+              <div class="logo-container">
+                <a href="#" class="logo-link"> Logo </a>
+              </div>
+              <nav class="menu-container">
+                <ul id="site-navigation-primary-desktop">
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">
+                      <span class="menu-item-inner"> Sample </span>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">
+                      <span class="menu-item-inner"> Sample </span>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">
+                      <span class="menu-item-inner"> Sample </span>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">
+                      <span class="menu-item-inner"> Sample </span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <div
+                onclick="toggleMenu()"
+                class="hamburger-container hamburger-container-side-panel"
+              >
+                <a
+                  class="hamburger-link toggle-side-panel"
+                  href="#"
+                  title="Side Panel"
+                >
+                  <div class="hamburger-btn">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </a>
+              </div>
+              <!-- hamburger -->
+            </div>
+            <!-- flex-wrap -->
+          </div>
+        </div>
+        <!-- nav-bar -->
+        <!-- desktop navigation -->
+
+        <div id="mobile-navigation" class="mobile-navigation">
+          <div id="mobile-bar" class="nav-bar">
+            <div class="flex-mobile-wrap">
+              <div class="logo-container">
+                <a href="#" class="logo-link"> Logo </a>
+              </div>
+              <div
+                onclick="toggleMenu()"
+                class="hamburger-container hamburger-container-side-panel"
+              >
+                <a
+                  class="hamburger-link toggle-side-panel"
+                  href="#"
+                  title="Side Panel"
+                >
+                  <div class="hamburger-btn">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- mobile navigation -->
+      </header>
+      <div class="site-content">
+        <section
+          id="hero"
+          class="d-flex justify-content-center align-items-center"
+          style="height: 100vh; background-color: #fdf9f6"
+        >
+          <div class="floating-container">
+            <div class="image-overlay-container">
+              <img
+                id="wine-bottle"
+                src="/media/wine-sample.png"
+                alt="Wine Bottle"
+                class="floating-image"
+              />
+              <!-- Overlay Content -->
+              <div class="image-overlay">
+                <h2 class="overlay-title">Exclusive Wines</h2>
+                <button class="overlay-button">
+                  Learn More
+                  <span><i class="fa-solid fa-arrow-right"></i></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="slider-section">
+          <div class="mask">
+            <div class="wrapper">
+              <div class="left column">
+                <!-- content divs -->
+                <!--content 1-->
+                <div class="content first">
+                  <h2>Blue Iceberg</h2>
+                  <p>Get cool with blue</p>
+                  <a href="#" role="button">more</a>
+                </div>
+
+                <!--content 2-->
+                <div class="content second">
+                  <h2>Crimson Spring</h2>
+                  <p>Red is not a crime</p>
+                  <a href="#" role="button">more</a>
+                </div>
+
+                <!--content 3-->
+                <div class="content third">
+                  <h2>Mida's Heir</h2>
+                  <p>Be more with a touch</p>
+                  <a href="#" role="button">more</a>
+                </div>
+              </div>
+              <div class="right column">
+                <!-- pic divs -->
+                <div class="pic first"></div>
+                <div class="pic second"></div>
+                <div class="pic third"></div>
+              </div>
+            </div>
+            <button class="arrow left-arrow">&#8249;</button>
+            <button class="arrow right-arrow">&#8250;</button>
+          </div>
+        </section>
+
+        <section id="wine-section">
+          <div class="wine-selection-container">
+            <div class="wine-selection-inner">
+              <div class="block-title">
+                <h3>Our best spirits</h3>
+              </div>
+              <div class="wine-cards-container">
+                <div class="wine-card">
+                  <div class="product-image">
+                    <span class="wine-status"> OUT OF ORDER </span>
+                    <img src="/media/wine-sample.png" />
+                  </div>
+                  <div class="product-content">
+                    <h3 class="product-name">Champagne</h3>
+                    <p class="product-description">A short description</p>
+                  </div>
+                </div>
+                <div class="wine-card">
+                  <div class="product-image">
+                    <span class="wine-status"> OUT OF ORDER </span>
+                    <img src="/media/wine-sample.png" />
+                  </div>
+                  <div class="product-content">
+                    <h3 class="product-name">Champagne</h3>
+                    <p class="product-description">A short description</p>
+                  </div>
+                </div>
+                <div class="wine-card">
+                  <div class="product-image">
+                    <span class="wine-status"> OUT OF ORDER </span>
+                    <img src="/media/wine-sample.png" />
+                  </div>
+                  <div class="product-content">
+                    <h3 class="product-name">Champagne</h3>
+                    <p class="product-description">A short description</p>
+                  </div>
+                </div>
+                <div class="wine-card">
+                  <div class="product-image">
+                    <span class="wine-status"> OUT OF ORDER </span>
+                    <img src="/media/wine-sample.png" />
+                  </div>
+                  <div class="product-content">
+                    <h3 class="product-name">Champagne</h3>
+                    <p class="product-description">A short description</p>
+                  </div>
+                </div>
+                <div class="wine-card">
+                  <div class="product-image">
+                    <span class="wine-status"> OUT OF ORDER </span>
+                    <img src="/media/wine-sample.png" />
+                  </div>
+                  <div class="product-content">
+                    <h3 class="product-name">Champagne</h3>
+                    <p class="product-description">A short description</p>
+                  </div>
+                </div>
+                <div class="wine-card">
+                  <div class="product-image">
+                    <span class="wine-status"> OUT OF ORDER </span>
+                    <img src="/media/wine-sample.png" />
+                  </div>
+                  <div class="product-content">
+                    <h3 class="product-name">Champagne</h3>
+                    <p class="product-description">A short description</p>
+                  </div>
+                </div>
+                <div class="wine-card">
+                  <div class="product-image">
+                    <span class="wine-status"> OUT OF ORDER </span>
+                    <img src="/media/wine-sample.png" />
+                  </div>
+                  <div class="product-content">
+                    <h3 class="product-name">Champagne</h3>
+                    <p class="product-description">A short description</p>
+                  </div>
+                </div>
+                <div class="wine-card">
+                  <div class="product-image">
+                    <span class="wine-status"> OUT OF ORDER </span>
+                    <img src="/media/wine-sample.png" />
+                  </div>
+                  <div class="product-content">
+                    <h3 class="product-name">Champagne</h3>
+                    <p class="product-description">A short description</p>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center mt-4">
+                <a href="all-wines.html" class="view-more-btn"
+                  >View More Wines
+                  <span><i class="fa-solid fa-arrow-right"></i></span
+                ></a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="best-seller"></section>
+
+        <section id="about-us-section">
+          <div class="section-background-overlay"></div>
+          <div class="about-us-container">
+            <div class="about-us-inner">
+              <div class="about-us-image">
+                <img src="/media/about_us-image3.png" alt="" />
+              </div>
+              <div class="about-us-content-container">
+                <div class="about-us-content-inner">
+                  <div class="element-container">
+                    <div class="about_us-element-inner">
+                      <h2 class="element-header">About us</h2>
+                    </div>
+                  </div>
+                  <div class="element-container">
+                    <div class="about_us-element-inner">
+                      <div class="element-subheader">
+                        Passion for Fine Wines
+                      </div>
+                    </div>
+                  </div>
+                  <div class="element-container">
+                    <div class="about_us-text-container">
+                      <p class="about_us-text">
+                        At Jandzi we pride ourselves on curating a selection of
+                        the finest wines from around the world. Whether you're a
+                        seasoned connoisseur or new to wine, our mission is to
+                        provide you with the perfect bottle for every occasion.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="about_us-btn-container">
+                    <a href="#" class="about_us-link">Find out more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- <h2 class="text-center text-lg-start">
+          Passion for Fine Wines
+        </h2>
+        <p class="text-muted">
+          At [Business Name], we pride ourselves on curating a selection
+          of the finest wines from around the world. Whether you're a
+          seasoned connoisseur or new to wine, our mission is to provide
+          you with the perfect bottle for every occasion.
+        </p>
+        <p class="text-muted">
+          Discover our story and learn how we bring people together, one
+          sip at a time.
+        </p>
+        <div class="text-center text-lg-start">
+          <a href="about-us.html" class="btn btn-primary"
+            >Learn More About Us</a
+          >
+        </div> -->
+
+        <section class="testimonial-section-container">
+          <div class="testimonial-section-inner">
+            <div class="testimonial-container">
+              <div class="element-container">
+                <div class="element-inner">
+                  <p class="element-header">Testimonial</p>
+                </div>
+              </div>
+              <div class="element-container">
+                <div class="element-inner">
+                  <h2 class="element-subheader">Customer reviews</h2>
+                </div>
+              </div>
+              <section class="reviews-container">
+                <div class="reviews-container-inner">
+                  <div class="review-card-container">
+                    <div class="review-card-inner">
+                      <div class="review-card">
+                        <div class="review-element">
+                          <div class="review-element-inner">
+                            <div class="star-rating-wrapper">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="testimonial-content">
+                          <div class="testimonial-text">
+                            What I love about Jandzi is that you really actually
+                            choose the producers carefully. That is the
+                            distinguishing factor between they and everyone
+                            else."
+                          </div>
+                          <div class="image_details-wrapper">
+                            <div class="image_details">
+                              <div class="testimonial-image">
+                                <img src="/media/profile-image.jpg" />
+                              </div>
+                              <div class="testimonial-details">
+                                <div class="testimonial-name">Nancy G.</div>
+                                <div class="testimonial-job">
+                                  Verified Buyer
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="review-card-container">
+                    <div class="review-card-inner">
+                      <div class="review-card">
+                        <div class="review-element">
+                          <div class="review-element-inner">
+                            <div class="star-rating-wrapper">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="testimonial-content">
+                          <div class="testimonial-text">
+                            What I love about Jandzi is that you really actually
+                            choose the producers carefully. That is the
+                            distinguishing factor between they and everyone
+                            else."
+                          </div>
+                          <div class="image_details-wrapper">
+                            <div class="image_details">
+                              <div class="testimonial-image">
+                                <img src="/media/profile-image.jpg" />
+                              </div>
+                              <div class="testimonial-details">
+                                <div class="testimonial-name">Nancy G.</div>
+                                <div class="testimonial-job">
+                                  Verified Buyer
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="review-card-container">
+                    <div class="review-card-inner">
+                      <div class="review-card">
+                        <div class="review-element">
+                          <div class="review-element-inner">
+                            <div class="star-rating-wrapper">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="testimonial-content">
+                          <div class="testimonial-text">
+                            What I love about Jandzi is that you really actually
+                            choose the producers carefully. That is the
+                            distinguishing factor between they and everyone
+                            else."
+                          </div>
+                          <div class="image_details-wrapper">
+                            <div class="image_details">
+                              <div class="testimonial-image">
+                                <img src="/media/profile-image.jpg" />
+                              </div>
+                              <div class="testimonial-details">
+                                <div class="testimonial-name">Nancy G.</div>
+                                <div class="testimonial-job">
+                                  Verified Buyer
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </section>
+
+        <section id="gallery">
+          <div class="block-title">
+            <h3>Our gallery</h3>
+          </div>
+          <div class="grid-section">
+            <div class="grid-gallery-card">
+              <img src="/media/gallery-images/gallery-image1.jpg" />
+            </div>
+            <div class="grid-gallery-card">
+              <img src="/media/gallery-images/gallery-image2.jpg" />
+            </div>
+            <div class="grid-gallery-card">
+              <img src="/media/gallery-images/gallery-image5.jpg" />
+            </div>
+            <div class="grid-gallery-card">
+              <img src="/media/gallery-images/gallery-image4.jpg" />
+            </div>
+            <div class="grid-gallery-card">
+              <img src="/media/gallery-images/gallery-image3.jpg" />
+            </div>
+            <div class="grid-gallery-card">
+              <img src="/media/gallery-images/gallery-image6.jpg" />
+            </div>
+            <div class="grid-gallery-card">
+              <img src="/media/gallery-images/gallery-image7.jpg" />
+            </div>
+            <div class="grid-gallery-card">
+              <img src="/media/gallery-images/gallery-image9.jpg" />
+            </div>
+          </div>
+        </section>
+
+        <section id="contact-preview-section">
+          <div class="contact-preview">
+            <div class="contact-preview-column">
+              <div class="contact-preview-column-inner">
+                <h2 class="contact-preview-title">
+                  If you have any questions fill out this form.
+                </h2>
+                <div class="contact-preview_location">
+                  <p class="title">
+                    <a itemprop="url" href="#" target="_self">
+                      <span class="title-inner">
+                        <span
+                          class="icon-holder"
+                          style="top: -14px; margin: 10px"
+                        >
+                          <span
+                            class="icon-font-awesome fa fa-location-dot qodef-icon qodef-e"
+                          ></span>
+                        </span>
+                        <span class="title-text"
+                          >885 Avenue de la Montagne Noire 11620
+                          Villemoustaussou, France.</span
+                        >
+                      </span>
+                    </a>
+                  </p>
+                </div>
+                <div class="contact-preview_contact">
+                  <p class="title">
+                    <a itemprop="url" href="#" target="_self">
+                      <span class="title-inner">
+                        <span class="icon-holder" style="margin: 10px">
+                          <span
+                            class="icon-font-awesome fa fa-phone qodef-icon qodef-e"
+                          ></span>
+                        </span>
+                        <span class="title-text">1234567</span>
+                      </span>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="contact-preview-column">
+              <div class="contact-preview-column-inner">
+                <form>
+                  <input
+                    size="40"
+                    maxlength="400"
+                    class=""
+                    aria-required="true"
+                    aria-invalid="false"
+                    placeholder="Your name..."
+                    value=""
+                    type="text"
+                    name="your-name"
+                  />
+                  <span class="form-control-wrap"
+                    ><input
+                      size="40"
+                      maxlength="400"
+                      class=""
+                      aria-required="true"
+                      aria-invalid="true"
+                      placeholder="Your email..."
+                      value=""
+                      type="email"
+                      name="your-email"
+                    /><span class="not-valid-tip" aria-hidden="true"
+                      >Please enter an email address.</span
+                    ></span
+                  >
+                  <textarea
+                    cols="40"
+                    rows="3"
+                    maxlength="2000"
+                    class=""
+                    aria-required="true"
+                    aria-invalid="false"
+                    placeholder="Your message..."
+                  ></textarea>
+                  <div style="text-align: right">
+                    <button type="submit" class="form-control-button">
+                      <span class="qodef-btn-text">Send message</span>
+                    </button>
+                  </div>
+                  <div class="response-output" aria-hidden="true">
+                    One or more fields have an error. Please check and try
+                    again.
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="map-section" style="background-color: #f9f9f9">
+          <div
+            class="map-container"
+            style="
+              position: relative;
+              padding-bottom: 56.25%;
+              height: 0;
+              overflow: hidden;
+            "
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253682.46310871482!2d3.1191439847493765!3d6.548369368937704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos!5e0!3m2!1sen!2sng!4v1734703941097!5m2!1sen!2sng"
+              width="600"
+              height="450"
+              style="
+                border: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+              "
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </section>
+      </div>
+      <footer>
+        <div class="footer-inner">
+          <div class="spacer_large"></div>
+          <div id="footer-logo" class="footer-content-container">
+            <img src="" />
+          </div>
+          <div id="footer-nav-links" class="footer-content-container">
+            <div class="spacer"></div>
+            <nav>
+              <ul>
+                <li>
+                  <a href="#"><span>Home</span></a>
+                </li>
+                <li>
+                  <a href="#"><span>Home</span></a>
+                </li>
+                <li>
+                  <a href="#"><span>Home</span></a>
+                </li>
+                <li>
+                  <a href="#"><span>Home</span></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div id="socials" class="footer-content-container">
+            <div class="spacer"></div>
+            <div class="socials-links-container">
+              <a href="#" class="social-icon-link">
+                <span class="social-icon">
+                  <span class="icon-instagram"></span>
+                </span>
+              </a>
+              <a href="#" class="social-icon-link">
+                <span class="social-icon">
+                  <span class="icon-whatsapp"></span>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="spacer_small"></div>
+          <div class="divider"></div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

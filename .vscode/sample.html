@@ -1,0 +1,377 @@
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="./media/image1.jpg"
+          class="d-block w-100"
+          alt="Wine Display"
+        />
+        <div class="custom-caption position-absolute">
+          <h1>Welcome to Our Wine World</h1>
+          <p>
+            Discover the finest selection of wines curated just for you.
+          </p>
+          <a href="#wine-section" class="custom-btn">Explore Wines</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="./media/image2.jpg"
+          class="d-block w-100"
+          alt="Wine Glasses"
+        />
+        <div class="custom-caption position-absolute">
+          <h1>
+            Welcome to <br />
+            Our Wine World
+          </h1>
+          <p>
+            Discover the finest selection of wines curated just for you.
+          </p>
+          <a href="#wine-section" class="custom-btn">Explore Wines</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <video class="d-block w-100" autoplay muted loop>
+          <source src="/media/video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="custom-caption position-absolute">
+          <h1>Welcome to Our Wine World</h1>
+          <p>
+            Discover the finest selection of wines curated just for you.
+          </p>
+          <a href="#wine-section" class="custom-btn">Explore Wines</a>
+        </div>
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#heroCarousel"
+      data-bs-slide="prev"
+    >
+      <span
+        class="carousel-control-prev-icon"
+        aria-hidden="true"
+      ></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#heroCarousel"
+      data-bs-slide="next"
+    >
+      <span
+        class="carousel-control-next-icon"
+        aria-hidden="true"
+      ></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section id="top-wines">
+    <div class="vertical-split-slider">
+      <div class="slider_left">
+        <div class="slide_image">
+          <div class="table-cell"></div>
+        </div>
+        <div class="slide_image">
+          <div class="table-cell"></div>
+        </div>
+        <div class="slide_image">
+          <div class="table-cell"></div>
+        </div>
+      </div>
+      <div class="slider_right">
+        <div class="slide-content">
+          <div class="table-cell">
+            <h2 class="slider-content_title">
+              Wine title
+            </h2>
+            <div class="slide-content_text">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam adipisci expedita, ex eveniet quis omnis, facere mollitia consectetur velit provident iste.</p>
+            </div>
+            <div class="slide-content_item">
+              <span class="content-item_title">Alcohol</span>
+              <span class="content-item_text">Vol 15%</span>
+            </div>
+          </div>
+        </div>
+        <div class="slide-content">
+          <div class="table-cell">
+            <h2 class="slider-content_title">
+              Wine title
+            </h2>
+            <div class="slide-content_text">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam adipisci expedita, ex eveniet quis omnis, facere mollitia consectetur velit provident iste.</p>
+            </div>
+            <div class="slide-content_item">
+              <span class="content-item_title">Alcohol</span>
+              <span class="content-item_text">Vol 15%</span>
+            </div>
+          </div>
+        </div>
+        <div class="slide-content">
+          <div class="table-cell">
+            <h2 class="slider-content_title">
+              Wine title
+            </h2>
+            <div class="slide-content_text">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam adipisci expedita, ex eveniet quis omnis, facere mollitia consectetur velit provident iste.</p>
+            </div>
+            <div class="slide-content_item">
+              <span class="content-item_title">Alcohol</span>
+              <span class="content-item_text">Vol 15%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="vertical-split-slider-thumbs">
+        <li class="slide-thumb">
+          <a href="#">
+            <div class="slide-thumb-image"></div>
+          </a>
+        </li>
+        <li class="slide-thumb">
+          <a href="#">
+            <div class="slide-thumb-image"></div>
+          </a>
+        </li>
+        <li class="slide-thumb">
+          <a href="#">
+            <div class="slide-thumb-image"></div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
+  #top-wines {
+    position: relative;
+    height: 100vh;
+    overflow: hidden; /* Prevent content from spilling out */
+    background-color: #f4f4f4; /* Optional: Adjust based on design */
+    
+  }
+  
+  
+  .vertical-split-slider {
+    background: 0 0;
+    border: 0;
+    outline: 0;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    visibility: visible;
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .vertical-split-slider {
+        display: none;
+    }
+  }
+  
+  .slider_left {
+    width: 45.8vw !important;
+    position: fixed;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    touch-action: none;
+    overflow: hidden;
+  }
+  .slide_image {
+    visibility: visible;
+    vertical-align: baseline;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: table;
+    width: 100%;
+    background-image: url("https://chateau.qodeinteractive.com/wp-content/uploads/2022/12/rev-home-img-03.jpg");
+    height: 100%;
+  }
+  .table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: calc(100vh - 2 * 10%) !important;
+  }
+  .slider_right {
+    right: 0 !important;
+    width: 54.2vw !important;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    touch-action: none;
+    overflow: hidden;
+  }
+  
+  .slider_left,
+  .slider_right {
+    
+    height: 100vh;
+  }
+  
+  
+  .slide-content {
+    vertical-align: baseline;
+    padding: 10% 29% 10% 13%;
+    position: relative;
+    display: table;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+  }
+  .slider-content_title {
+    vertical-align: baseline;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #243305;
+    font-size: 50px;
+    line-height: 1.16em;
+    letter-spacing: 0.05em;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    margin: 0 0 15px 0;
+    position: relative;
+    z-index: 1;
+  }
+  .slide-content_text {
+    vertical-align: baseline;
+    box-sizing: border-box;
+    margin: 0 0 28px 0;
+    position: relative;
+    z-index: 1;
+  }
+  .slide-content_text p {
+    vertical-align: baseline;
+    margin: 10px 0;
+  }
+  .slide-content_item {
+    vertical-align: baseline;
+    display: flex;
+    position: relative;
+    z-index: 1;
+  }
+  .content-item_title{
+    font-size: 14px;
+    line-height: 2.1428571429em;
+    font-weight: 500;
+    font-family: "Barlow Condensed",sans-serif;
+    letter-spacing: .175em;
+    text-transform: uppercase;
+    width: 130px;
+    margin-bottom: 5px;
+    flex-shrink: 0;
+  }
+  .content-item_text{
+    font-family: "Ibarra Real Nova",serif;
+    font-style: italic;
+    font-size: 17px;
+    letter-spacing: .02em;
+    display: inline-flex;
+    vertical-align: middle;
+    flex-wrap: wrap;
+    color: var(--qode-main-color);
+  }
+  .vertical-split-slider-thumbs {
+    visibility: visible;
+    vertical-align: baseline;
+    position: fixed;
+    bottom: 6.7%;
+    right: 3.7%;
+    z-index: 1111;
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+  }
+  
+  .slide-thumb{
+    list-style: none;
+    vertical-align: baseline;
+    opacity: .5;
+    transition: .2s ease-out;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background: #fafafa;
+    overflow: hidden;
+  }
+  @media only screen and (max-width: 1440px) {
+    .slide-thumb{
+        width: 80px;
+        height: 80px;
+    }
+  }
+  .slide-thumb a{
+    vertical-align: baseline;
+    color: #243305;
+    transition: color .2s ease-out;
+    cursor: pointer;
+    box-sizing: border-box;
+    box-shadow: none;
+    text-decoration: none;
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  .slide-thumb-image{
+    cursor: pointer;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-family: "Ibarra Real Nova",serif;
+    font-style: italic;
+    font-size: 17px;
+    letter-spacing: .02em;
+    display: inline-flex;
+    vertical-align: middle;
+    flex-wrap: wrap;
+    color: var(--qode-main-color);
+  }
+  .slide-thumb-image img{
+    aspect-ratio: auto 110 / 110;
+    vertical-align: middle;
+    box-sizing: border-box;
+    max-width: 100%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+    
+
+
+    
+  *  
+ * * 
+* * *    
