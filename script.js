@@ -203,3 +203,90 @@ function prev(){
 }
 
   
+
+
+//featured slider
+const slider = document.querySelector(".product-slider");
+const leftBtn = document.querySelectorAll(".left");
+const rightBtn = document.querySelectorAll(".right");
+
+const cardList = [
+  {
+      type: "Red",
+      title: "Wine Corvo Rosso",
+      image: "./media/RedWineBottle.png",
+      color: "#5c221e",
+  },
+  {
+      type: "White",
+      title: "Fantini Farnese Trebbiano d'Abruzzo",
+      image: "./media/WhiteWineBottle.png",
+      color: "#ffecb3",
+  },
+  {
+      type: "sparkling",
+      title: "Fantini Pinot Grigio",
+      image: "./media/SparklingWineBottle.png",
+      color: "#d0943a",
+  },
+  {
+      type: "Red",
+      title: "Wine Corvo Rosso",
+      image: "./media/RedWineBottle.png",
+      color: "#5c221e",
+  },
+  {
+      type: "White",
+      title: "Fantini Farnese Trebbiano d'Abruzzo",
+      image: "./media/WhiteWineBottle.png",
+      color: "#ffecb3",
+  },
+  {
+      type: "sparkling",
+      title: "Fantini Pinot Grigio",
+      image: "./media/SparklingWineBottle.png",
+      color: "#d0943a",
+  },
+];
+
+let index = 0;
+
+function updateSlider() {
+ 
+    cardList.forEach((card) => {
+        const productDiv = document.createElement("div");
+        productDiv.classList.add("product");
+        productDiv.innerHTML = `
+            <div>
+                <img src=${card.image} alt=${card.title} />
+            </div>
+            <div class="clip" style="background-color: ${card.color};"></div>
+            <div class="product-info">
+                <div class="product-type">
+                    <div class="card-color-indicator" style="background-color: ${card.color};"></div>
+                    <p class="type" style="color: ${card.color};">${card.type}</p>
+                </div>
+                <h2>${card.title}</h2>
+                <p>Italy</p>
+                <div class="price">
+                    <p>$29,99</p>
+                    <span>$27,90</span>
+                </div>
+            </div>
+        `;
+        slider.appendChild(productDiv);
+    });
+    slider.style.transform = `translateX(${-index * 284}px)`;
+}
+
+updateSlider();
+
+leftBtn[0].addEventListener("click", () => {
+    index = Math.max(0, index - 1);
+    updateSlider();
+});
+
+rightBtn[0].addEventListener("click", () => {
+    index = Math.min(cardList.length - 1, index + 1);
+    updateSlider();
+});

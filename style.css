@@ -2008,3 +2008,222 @@ footer {
   width: 100%;
   border-block-start: 1px solid #454a50;
 }
+
+
+
+
+
+
+.slide-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.slide-button.left {
+  left: 10px;
+}
+.slide-button.left img {
+  transform: rotate(180deg);
+}
+
+.slide-button.right {
+  right: 10px;
+}
+
+.productList {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  overflow: hidden;
+}
+
+.product-container {
+  overflow: hidden;
+  width: 284px; /* Width of a single product with margins */
+}
+
+.product-slider-cont {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  width: 95%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.product-slider {
+  display: flex;
+  width: 95%;
+  flex-direction: row;
+  transition: transform 0.5s ease-in-out;
+}
+
+.productList .product {
+  margin: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  width: 264px;
+  height: 344px;
+  padding: 15px;
+  background-color: azure;
+  flex-shrink: 0; /* Prevent products from shrinking */
+}
+
+/* ... (rest of your existing CSS) ... */
+
+.slide {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.left {
+  margin-right: 10px;
+}
+.left img {
+  transform: rotate(180deg);
+}
+
+.right {
+  margin-left: 10px;
+}
+
+.productList .product:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.productList .product .product-info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.productList .product .product-info .product-type .type {
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 3px;
+}
+
+.productList .product .product-info .product-type .card-color-indicator {
+  width: 80px;
+  height: 8px;
+  border-radius: 4px;
+  margin-bottom: 2px;
+}
+
+.productList .product .clip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 48px;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+  z-index: -1;
+}
+
+.productList .product img {
+  object-fit: cover;
+  border-radius: 5px;
+  filter: drop-shadow(-5px 2px #61616142);
+}
+
+.productList .product h2 {
+  font-size: 24px;
+  color: #000;
+}
+
+.productList .product p {
+  font-size: 15px;
+  color: #9e9e9e;
+  font-weight: 400;
+}
+
+.productList .product span {
+  font-size: 20px;
+  color: #000;
+  font-weight: bold;
+}
+
+.productList .product button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.productList .product button:hover {
+  background-color: #555;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+  position: relative;
+  top: -100px;
+  z-index: 4;
+
+}
+.card {
+  margin: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  width: 216px;
+  height: 281px;
+  padding: 15px;
+}
+
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -5;
+  }
+
+ .card span {
+    width: 48px;
+    height: 4px;
+    border-radius: 4px;
+    margin-bottom: 2px;
+  }
+
+ .card h2 {
+    font-size: 1.5rem;
+    color: #fff;
+  }
